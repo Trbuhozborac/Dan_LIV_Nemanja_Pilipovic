@@ -12,6 +12,7 @@ namespace Zadatak_1.Models
         public string TransmissionType { get; set; }
         public string Manufacturer { get; set; }
         public int TrafficNumber { get; set; }
+        public int Fuel { get; set; }
 
         #endregion
 
@@ -24,7 +25,7 @@ namespace Zadatak_1.Models
 
         public Automobile(double engineDisplacement, int weight, string category, string motorType, string color,
             int numberOfMotors, string registrationNumber, int doorsNumber, int tankVolume, string transmissionType,
-            string manufacturer, int trafficNumber)
+            string manufacturer, int trafficNumber, int fuel)
         {
             EngineDisplacement = engineDisplacement;
             Weight = weight;
@@ -38,6 +39,7 @@ namespace Zadatak_1.Models
             TransmissionType = transmissionType;
             Manufacturer = manufacturer;
             TrafficNumber = trafficNumber;
+            Fuel = fuel;
         }
 
         #endregion
